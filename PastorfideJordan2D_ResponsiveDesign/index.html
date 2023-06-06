@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rejano's Arrowroot Cookies - Jordan Pastorfide, BSIT 2D</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		footer {
+			text-align: center;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<img src="images/rejano-logo.jpg" class="logo">
+			<nav>
+				<ul id="menuList">
+					<li><a href="">Arrowroot Cookies</a></li>
+					<li><a href="">Peanut Butter</a></li>
+					<li><a href="">Banana Chips</a></li>
+					<li><a href="">Others</a></li>
+				</ul>
+			</nav>
+			<img src="images/menu.png" class="menu-icon" 
+			onclick="togglemenu()">
+		</div>
+
+		<div class="row">
+			<div class="col-1">
+				<h2>Rejano's<br>Marinduque Deli</h2>
+				<h3>Arrowroot Cookies</h3>
+				<p>Highly Digestible</p>
+				<h4>₱400.00</h4>
+				<button type="button">BUY NOW<img src="images/arrow.png">
+				</button>
+			</div>
+			<div class="col-2">
+				<img src="images/arrowroot-cookies.png" class="raider">
+				<div class="color-box"></div>
+				<div class="add-btn">
+					<img src="images/add.png">
+					<p><small>Add to Cart</small></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="social-links">
+			<img src="images/fb.png">
+			<img src="images/tw.png">
+			<img src="images/ig.png">
+		</div>
+	</div>
+
+		<script>
+
+			var menuList = document.getElementById("menuList");
+
+			menuList.style.maxHeight = "0px";
+
+			function togglemenu(){
+
+				if(menuList.style.maxHeight == "0px")
+				{
+					menuList.style.maxHeight = "130px";
+				}
+				else
+				{
+					menuList.style.maxHeight = "0px";
+				}
+			}
+
+		</script>
+
+		<footer>
+			<p>&copy; 2023 Jordan Pastorfide, BSIT 2D. All rights reserved.</p>
+		</footer>
+</body>
+</html>
